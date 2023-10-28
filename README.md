@@ -1,3 +1,1 @@
-# React js da kerakli kutubxonalar va avvaldan tayyorlangan struktura
-
-muallif @akaikumogo
+# what's up all lil niggas. welcome to my portfolio repository
