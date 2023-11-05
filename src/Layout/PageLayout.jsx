@@ -1,20 +1,16 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 
 function Layout() {
   return (
-    <>
-      <header className="sticky top-0 bg-white z-50">
+    <div className="w-full h-screen bg-black font-mono text-white ">
+      <header className="mx-auto sm:w-[85%]">
         <Navbar />
       </header>
-      <main className="w-full mx-auto max-w-[800px] mt-[50px]">
+      <main className="sm:w-[85%] sm:h-[85%]  mx-auto  mt-[10px]">
         <Outlet />
       </main>
-      <footer>
-        <Footer />
-      </footer>
-    </>
+    </div>
   );
 }
 
