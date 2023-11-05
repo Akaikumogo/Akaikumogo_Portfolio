@@ -21,7 +21,7 @@ const Portfolio = () => {
         <h1 className="text-[30px] font-semibold">Codes</h1>
         <h1 className=" w-[200px]">
           Bu bo'limda siz men bajargan loyihalarda ulashishni istagan codlarni
-          ko'rishingiz mumkun{" "}
+          ko'rishingiz mumkun
         </h1>
       </div>
     </div>

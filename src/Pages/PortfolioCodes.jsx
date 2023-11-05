@@ -18,7 +18,6 @@ const PortfolioCodes = () => {
       getRepoDatas(item).then((res) => {
         data = [...data, res.data];
         setRepoData(data);
-        console.log(res.data);
       });
     });
     setTimeout(() => {

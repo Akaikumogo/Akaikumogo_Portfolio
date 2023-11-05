@@ -7,7 +7,7 @@ const File = ({ data }) => {
   const navigate = useNavigate();
   const code = atob(data.content);
   const [copy, setCopy] = useState(false);
-  console.log(data.name.split(".").pop());
+
   return (
     <div className="w-[100%]  h-full flex  ">
       <button
