@@ -5,10 +5,10 @@ const Folder = ({ data, root, path }) => {
   return (
     <>
       <div className="  h-[81%] w-[70%] rounded-md border-[2px]">
-        <div className="w-full h-[45px] flex justify-center items-center  border-b-2 rounded-t-sm text-[18px]">
+        <div className="w-full h-[40px] flex justify-center items-center  border-b-2 rounded-t-sm text-[18px]">
           {root}/{path}
         </div>
-        <div className="w-full h-[92.5%] px-3 py-2 rounded-b-md overflow-y-auto">
+        <div className="w-full h-[90%] px-3 py-2 rounded-b-md overflow-y-auto">
           {path ? (
             <h1 className="pointer px-2" onClick={() => navigate(-1)}>
               [..]
