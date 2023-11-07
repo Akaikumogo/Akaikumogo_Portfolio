@@ -1,10 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
+import folder from "../Images/folder.png";
+import file from "../Images/file.png";
 const Folder = ({ data, root, path }) => {
   const navigate = useNavigate();
+
   return (
     <>
-      <div className="  h-[81%] w-[70%] rounded-md border-[2px]">
+      <div className=" w-[100%] h-[80vh]  sm:h-[81%] sm:w-[70%] rounded-md border-[2px]">
         <div className="w-full h-[40px] flex justify-center items-center  border-b-2 rounded-t-sm text-[18px]">
           {root}/{path}
         </div>
@@ -14,10 +17,7 @@ const Folder = ({ data, root, path }) => {
               [..]
             </h1>
           ) : (
-            <h1
-              className="pointer px-2 border pointer"
-              onClick={() => navigate(-1)}
-            >
+            <h1 className="pointer px-2  pointer" onClick={() => navigate(-1)}>
               Ortga
             </h1>
           )}
@@ -25,9 +25,14 @@ const Folder = ({ data, root, path }) => {
             <h1
               onClick={() => navigate(`?content=${item.path}`)}
               key={item.sha}
-              className=" folder w-full h-[30px] flex  px-2  justify-start items-center  "
+              className=" folder w-full h-[30px] flex gap-2 px-2  justify-start items-center  "
             >
-              {item.type} {item.name}
+              {item.type != "dir" ? (
+                <img src={file} className="w-[5%] sm:w-[3%]" alt="" />
+              ) : (
+                <img src={folder} className="w-[5%] sm:w-[3%]" alt="" />
+              )}{" "}
+              {item.name}
             </h1>
           ))}
         </div>

@@ -3,9 +3,11 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <div className="w-full h-full  flex-col flex gap-3 ">
-      <h1 className="text-[38px] font-bold">Hi.I'm Sarvarbek Xazratov.</h1>
-      <div className="w-full text-[20px] ">
+    <div className="w-full h-[91vh] sm:h-[85vh]  sm:flex-col sm:flex sm:gap-3  ">
+      <h1 className="text-[24px] sm:text-[38px] sm:font-bold">
+        Hi.I'm Sarvarbek Xazratov.
+      </h1>
+      <div className="sm:w-full text-[16px] mt-[10px] font-bold sm:text-[20px] mb-6 ">
         <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -17,16 +19,12 @@ const Home = () => {
           }}
         />
       </div>
-      <h1 className="text-[28px]">O'zim haqimda:</h1>
-      <p className="w-[80%] text-[24px] ">
-        Salom mening ismim Sarvarbek. Dasturlash olamida 2020-yildan buyon
-        sayohat qilaman Asosiy yo'nalishim hozircha Front-end ammo Back-end ni
-        o'rganish niyatim ham bor va harakatdaman. Front end dasturchisi
-        sifatida ReactJs texnologiyasidan foydalanaman,o'zim mustaqil Python
-        dasturlash tilini basic o'rgnganman. 2023-yil 12-mart sanasidan boshlab
-        Najot ta'lim o'quv markazida o'qiy boshladim va shu yilning 14-oktyabr
-        sanasida o'quv kursini Muvofaqiyatli yakunladim.Undan Tashqari o'z
-        ustimda mustaqil ishlab kursdan tashqari ilimlarni o'rganmoqdaman.
+      <h1 className=" text-[20px] sm:text-[36px] sm:mb-0 mb-[10px]">
+        About me:
+      </h1>
+      <p className=" text-[16px] sm:w-[80%] sm:text-[24px] ">
+        Hi.I'm Sarvarbek and you can find me on social networks as Akikumogo. I was born in 2005
+        and I am currently a Front-end Developer. I use Reactjs technology.
       </p>
     </div>
   );

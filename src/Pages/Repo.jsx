@@ -44,7 +44,7 @@ const Repo = () => {
   return (
     <div className="w-[100%] h-[100%] flex justify-center">
       {isLoading ? (
-        <div className="w-full h-full flex justify-center items-center">
+        <div className="w-[80vw] h-[90vh]  flex justify-center items-center">
           <l-grid size="150" speed="2.5" color="white"></l-grid>
         </div>
       ) : repoData?.type === "file" ? (
