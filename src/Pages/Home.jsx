@@ -23,8 +23,9 @@ const Home = () => {
         About me:
       </h1>
       <p className=" text-[16px] sm:w-[80%] sm:text-[24px] ">
-        Hi.I'm Sarvarbek and you can find me on social networks as Akikumogo. I was born in 2005
-        and I am currently a Front-end Developer. I use Reactjs technology.
+        Hi.I'm Sarvarbek and you can find me on social networks as Akikumogo. I
+        was born in 2005 and I am currently a Front-end Developer. I use
+        ReactJS.
       </p>
     </div>
   );

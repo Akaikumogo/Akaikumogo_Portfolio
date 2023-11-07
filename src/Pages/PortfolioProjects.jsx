@@ -33,16 +33,16 @@ const projects = [
 const PortfolioProjects = () => {
   const navigate = useNavigate();
   return (
-    <>
+    <div className="sm:w-full sm:h-full flex ">
       <button
         className={
-          "repo  w-[100px] py-[10px] text-center duration-700 ease-in-out rounded-[10px] hover:bg-white hover:text-black transition-all"
+          "repo  w-[100px]  sm:h-[50px] py-[10px] text-center duration-700 ease-in-out rounded-[10px] hover:bg-white hover:text-black transition-all"
         }
         onClick={() => navigate(-1)}
       >
         ortga
       </button>
-      <div className="w-[100vw] h-[90vh] sm:w-[80%] flex-col flex items-center gap-2 overflow-y-auto  sm:h-[520px] mx-auto py-2 ">
+      <div className="w-[100vw] h-[90vh] sm:ml-10 sm:w-[80%] flex-col flex items-center gap-2 overflow-y-auto  sm:h-[100%] mx-auto py-8 ">
         {projects.map((item) => {
           return (
             <div
@@ -70,7 +70,7 @@ const PortfolioProjects = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 
